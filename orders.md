@@ -1,5 +1,7 @@
 # Orders
 
+Orders represent carts that have been purchased.
+
 ## Fields
 
 | Name | Type | Description |
@@ -17,3 +19,10 @@
 * Buck Ledger
 * Gift Buck Ledger
 * Order Transaction
+
+## Get a User's Orders
+
+```http
+GET /orders HTTP/1.1
+Accept: application/vnd.api+json
+```

@@ -1,6 +1,6 @@
 # Carts
 
-Each user always has exactly one active cart. Carts can not be created or deleted through the API; a new cart is automatically created when the current cart is purchased.
+Each user always has exactly one active cart. Carts can not be created or deleted through the API; a new cart is automatically created when the current cart is purchased. Purchases can be tracked through orders.
 
 ## Fields
 
@@ -23,6 +23,14 @@ Accept: application/vnd.api+json
 ## Update a User's Cart
 
 Because carts don't contain any attributes that can be directly manipulated, editing a cart directly is limited to removing cart items via the cart's `relationships`. Most cart updates will instead occur through operations on the cart items.
+
+```http
+PATCH /cart
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+```
+
+### Example
 
 Assuming the user's cart currently contains cart items 201, 202, and 203, the following request would remove cart item 202 from the cart:
 
