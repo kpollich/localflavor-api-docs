@@ -20,5 +20,18 @@
 
 * Deals
 * Coupons
-* Merchandise Deals
+
+## List Business Locations
+
+```http
+GET /business-locations HTTP/1.1
+Accept: application/vnd.api+json
+```
+
+## Retrieve a Business Location by ID
+
+```http
+GET /business-locations/:business_location_id HTTP/1.1
+Accept: applicaton/vnd.api+json
+```
 

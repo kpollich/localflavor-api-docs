@@ -18,13 +18,7 @@
 ## Related Items
 
 * Business Locations
-
-## Get a Business
-
-```http
-GET /businesses/:business_id HTTP/1.1
-Accept: application/vnd.api+json
-```
+* Merchandise Deals (?)
 
 ## List Businesses
 
@@ -52,3 +46,10 @@ Accept: application/vnd.api+json
 ```
 
 This call will return businesses within a given radius (TODO: determine radius) around the provided latitude and longitude. The latitude and longitude filters are ONLY supported in conjuction, and providing one without the other will result in that filter being ignored.
+
+## Retrieve a Business by ID
+
+```http
+GET /businesses/:business_id HTTP/1.1
+Accept: application/vnd.api+json
+```

@@ -14,3 +14,18 @@
 | fine_print | string | Legal information for the coupon |
 | sort_order | integer | The position in order in which to display the coupon |
 | coupon_type_id | integer | The type of coupon (standard, vanity, etc) |
+
+## List Coupons
+
+```http
+GET /coupons HTTP/1.1
+Accept: application/vnd.api+json
+```
+
+## Retrieve a Coupon by ID
+
+```http
+GET /coupons/:coupon_id HTTP/1.1
+Accept: application/vnd.api+json
+```
+

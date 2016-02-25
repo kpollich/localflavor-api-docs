@@ -36,3 +36,17 @@
 | details | string | ? |
 | deal_instructions | string | ? |
 | use_merchant_cert_codes | boolean | ? |
+
+## List Deals
+
+```http
+GET /deals HTTP/1.1
+Accept: application/vnd.api+json
+```
+
+## Retrieve a Deal by ID
+
+```http
+GET /deals/:deal_id HTTP/1.1
+Accept: application/vnd.api+json
+```
