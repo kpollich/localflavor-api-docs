@@ -39,6 +39,10 @@
 
 ## List Deals
 
+## Related Items
+
+* Images
+
 ```http
 GET /deals HTTP/1.1
 Accept: application/vnd.api+json

@@ -20,6 +20,7 @@
 
 * Deals
 * Coupons
+* Image
 
 ## List Business Locations
 
